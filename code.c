@@ -53,4 +53,6 @@ int minSwapsCouples(int* row, int rowSize){
     }
   }
   return swaps;
+  free(H);//deleting the allocated memmory which can result into memory leak
+  free(P);
 }
